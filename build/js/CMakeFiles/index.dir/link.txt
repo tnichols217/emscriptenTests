@@ -1,0 +1,1 @@
+/usr/lib/emscripten/emcc -s LEGACY_GL_EMULATION=1 -O2 @CMakeFiles/index.dir/objects1.rsp -o index.js 

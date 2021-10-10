@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Qafoo Emscripten WebGL Demo</title>
+    <style>
+      canvas.emscripten {
+        border: 0px none;
+      }
+    </style>
+  </head>
+  <body>
+  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+    <script type='text/javascript'>
+      // connect to canvas
+      var Module = {
+        canvas: document.getElementById('canvas')
+      }
+    </script>
+    <script async type="text/javascript" src="index.js"></script>
+</body>
+</html>
